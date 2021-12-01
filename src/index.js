@@ -18,6 +18,14 @@ const eventManager = new EventManager(RNOneSignal);
 export default class OneSignal {
     /* I N I T I A L I Z A T I O N */
 
+    static init(handler=function(){}) {
+        if (Platform.OS === 'android') {
+            RNOneSignal.init(handler);
+        } else {
+            handler(true);
+        }
+    }
+
     /**
      * Sets the OneSignal application Id. 1/2 of the initialization process.
      * @param {string} appId
