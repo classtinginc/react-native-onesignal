@@ -167,17 +167,27 @@ public class RNOneSignal extends ReactContextBaseJavaModule
          return;
       }
 
-      oneSignalInitDone = true;
-
-
       if (context == null) {
          // in some cases, especially when react-native-navigation is installed,
          // the activity can be null, so we can initialize with the context instead
          context = mReactApplicationContext.getApplicationContext();
       }
 
+      if (context == null) {
+         Log.e("onesignal", "application context is null");
+         return;
+      }
+
+      oneSignalInitDone = true;
+
       OneSignal.setInAppMessageClickHandler(this);
       OneSignal.initWithContext(context);
+   }
+
+   @ReactMethod
+   public void init(final Callback callback) {
+      initOneSignal();
+      callback.invoke(oneSignalInitDone);
    }
 
    @ReactMethod
