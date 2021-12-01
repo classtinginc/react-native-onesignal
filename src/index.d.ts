@@ -120,6 +120,13 @@ declare module 'react-native-onesignal' {
     /* O N E S I G N A L  I N T E R F A C E */
     export interface OneSignal {
         /**
+         * Onesignal application context initialize
+         * - android only
+         * @param callback callback
+         */
+        init(callback: (result: boolean) => void): void;
+
+        /**
          * Completes OneSignal initialization by setting the OneSignal Application ID.
          * @param  {string} appId
          * @returns void
