@@ -2,6 +2,18 @@
   <img src="https://onesignal.com/assets/common/logo_onesignal_color.png"/>
 </p>
 
+## !!! Deprecated !!!
+
+- 본 저장소의 master 브랜치는 더이상 관리되지 않으며, [classting](https://github.com/classtinginc/react-native-onesignal/tree/classting) 브랜치에서 관리됩니다.
+- 변경 사항 적용 후 버전 태그를 추가하여 사용합니다.
+  ```json
+  dependencies: {
+    "react-native-onesignal": "github:classtinginc/react-native-onesignal#v1.0.0-ct.1"
+  }
+  ```
+  - 태그 명명 규칙은 코드 베이스가 되는 `react-native-onesignal 의 버전` + `-ct.구분 숫자` 로 정의합니다.
+  - 예시) react-native-onesignal 4.0.7 버전에서 변경사항이 적용된 경우 `4.0.7-ct.1`
+
 ### React Native OneSignal SDK
 [![npm version](https://img.shields.io/npm/v/react-native-onesignal.svg)](https://www.npmjs.com/package/react-native-onesignal) [![npm downloads](https://img.shields.io/npm/dm/react-native-onesignal.svg)](https://www.npmjs.com/package/react-native-onesignal)
 
