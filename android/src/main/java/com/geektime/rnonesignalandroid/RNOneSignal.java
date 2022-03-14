@@ -185,12 +185,6 @@ public class RNOneSignal extends ReactContextBaseJavaModule
    }
 
    @ReactMethod
-   public void init(final Callback callback) {
-      initOneSignal();
-      callback.invoke(oneSignalInitDone);
-   }
-
-   @ReactMethod
    public void setAppId(String appId) {
       OneSignal.setAppId(appId);
    }
@@ -830,5 +824,21 @@ public class RNOneSignal extends ReactContextBaseJavaModule
    @ReactMethod
    public void removeListeners(int count) {
       // Keep: Required for RN built in Event Emitter Calls.
+   }
+
+   /***************************
+    *
+    * Classting custom methods
+    *
+    ***************************/
+   @ReactMethod
+   public void init(final Callback callback) {
+      initOneSignal();
+      callback.invoke(oneSignalInitDone);
+   }
+
+   @ReactMethod
+   public String getSdkVersion() {
+      return OneSignal.getSdkVersionRaw();
    }
 }

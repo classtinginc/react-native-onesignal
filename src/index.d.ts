@@ -397,6 +397,12 @@ declare module 'react-native-onesignal' {
          * @returns void
          */
         provideUserConsent(granted: boolean): void;
+
+        /**
+         * Returns current native sdk version
+         * @returns string
+         */
+        getSdkVersion(): string;
     }
     const OneSignal: OneSignal;
     export default OneSignal;
