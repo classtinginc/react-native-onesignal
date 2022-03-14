@@ -1103,6 +1103,13 @@ export default class OneSignal {
     }
     eventManager.clearHandlers();
   }
+
+  /**
+   * Classting custom methods
+   */
+  static getSdkVersion(): string {
+    return RNOneSignal.getSdkVersion();
+  }
 }
 
 /* Export all public models */
