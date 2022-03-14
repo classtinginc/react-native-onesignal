@@ -827,6 +827,13 @@ export default class OneSignal {
         if (!isNativeModuleLoaded(RNOneSignal)) return;
         eventManager.clearHandlers();
     }
+
+    /**
+     * Classting custom methods
+     */
+    static getSdkVersion(): string {
+        return RNOneSignal.getSdkVersion();
+    }
 }
 
 /* Export all public models */
