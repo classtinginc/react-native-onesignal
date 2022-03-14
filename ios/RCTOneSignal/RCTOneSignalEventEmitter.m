@@ -536,4 +536,11 @@ RCT_EXPORT_METHOD(sendOutcomeWithValue:(NSString *)name :(NSNumber * _Nonnull)va
     }];
 }
 
+/*
+ * Classting custom methods
+ */
+RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getSdkVersion) {
+   return [OneSignal sdkVersionRaw];
+}
+
 @end
