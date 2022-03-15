@@ -1103,12 +1103,20 @@ export default class OneSignal {
     }
     eventManager.clearHandlers();
   }
-  
+
   /**
    * Classting custom methods
    */
   static getSdkVersion(): string {
       return RNOneSignal.getSdkVersion();
+  }
+
+  static init (handler: (success: boolean) => void): void {
+    if (Platform.OS === 'android') {
+        RNOneSignal.init(handler);
+    } else {
+        handler(true);
+    }
   }
 }
 
