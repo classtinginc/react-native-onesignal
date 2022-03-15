@@ -1107,6 +1107,14 @@ export default class OneSignal {
   /**
    * Classting custom methods
    */
+  static init(handler: (success: boolean) => void): void {
+    if (Platform.OS === 'android') {
+      RNOneSignal.init(handler);
+    } else {
+      handler(true);
+    }
+  }
+
   static getSdkVersion(): string {
     return RNOneSignal.getSdkVersion();
   }
