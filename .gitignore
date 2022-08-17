@@ -1,6 +1,4 @@
 node_modules/
-android/build
-ios/RCTOneSignal.xcodeproj/xcuserdata
 examples/CocoapodsDemo/node_modules
 examples/RNOneSignal/node_modules
 *.iml
@@ -25,8 +23,6 @@ examples/RNOneSignalTS/ios/RNOneSignal.xcodeproj/project.xcworkspace/xcuserdata
 examples/RNOneSignalTS/ios/RNOneSignal.xcodeproj/xcuserdata
 examples/RNOneSignalTS/ios/RNOneSignal.xcworkspace/xcshareddata
 examples/RNOneSignalTS/ios/RNOneSignal.xcworkspace/xcuserdata
-ios/RCTOneSignal.xcodeproj/project.xcworkspace/xcshareddata
 examples/RNOneSignal/ios/Pods/Pods.xcodeproj/xcuserdata
 android/.idea
 images
-dist
