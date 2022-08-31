@@ -18,7 +18,7 @@ import {
   IN_APP_MESSAGE_DID_DISMISS,
   IN_APP_MESSAGE_DID_DISPLAY,
 } from './events';
-import { ChangeEvent } from '../models/Subscription';
+import {ChangeEvent} from '../models/Subscription';
 import OSNotification from '../OSNotification';
 
 const eventList = [
