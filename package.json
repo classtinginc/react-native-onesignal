@@ -8,7 +8,7 @@
     "prepare": "install-peers && yarn run build",
     "build": "tsc",
     "release": "sh scripts/release.sh",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "test": "tsc && jest --coverage"
   },
   "dependencies": {
