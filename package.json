@@ -8,6 +8,7 @@
     "prepare": "install-peers && yarn run build",
     "build": "tsc",
     "release": "sh scripts/release.sh",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "tsc && jest --coverage"
   },
   "dependencies": {
@@ -20,10 +21,13 @@
     "react-native": "*"
   },
   "devDependencies": {
+    "@react-native-community/eslint-config": "^1.1.0",
     "@types/invariant": "^2.2.2",
     "@types/jest": "^27.1.8",
     "@types/react-native": "^0.66.8",
-    "install-peers-cli": "^2.2.0"
+    "eslint": "^6.5.1",
+    "install-peers-cli": "^2.2.0",
+    "typescript": "^3.8.3"
   },
   "keywords": [
     "react-component",
