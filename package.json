@@ -8,7 +8,7 @@
     "prepare": "install-peers && yarn run build",
     "build": "tsc",
     "release": "sh scripts/release.sh",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx; prettier --check src",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx; prettier --check src __test__",
     "test": "tsc && jest --coverage"
   },
   "dependencies": {
